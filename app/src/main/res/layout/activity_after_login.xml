@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout-->
+    <!--android:id="@+id/drawer_layout"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+
+<!-- The main content view -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- Toolbar instead of ActionBar so the drawer can slide on top -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+
+    <!-- Real content goes here -->
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/home_img_view"
+                android:src="@drawable/home_unselected"
+                android:layout_weight="1"
+                android:scaleType="centerInside" />
+            <!--<android.support.v4.widget.Space-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1" />-->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/profile_img_view"
+                android:src="@drawable/profile_unselected"
+                android:layout_weight="1"
+                android:scaleType="centerInside" />
+            <!--<android.support.v4.widget.Space-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1" />-->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/stat_img_view"
+                android:src="@drawable/status_unselected"
+                android:layout_weight="1"
+                android:scaleType="centerInside" />
+            <!--<android.support.v4.widget.Space-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1" />-->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/refer_img_view"
+                android:src="@drawable/refer_unselected"
+                android:scaleType="fitCenter"
+                android:layout_weight="1" />
+            <!--<android.support.v4.widget.Space-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1" />-->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/setting_img_view"
+                android:src="@drawable/setting_unselected"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+</LinearLayout>
+
+
+
+
+
+

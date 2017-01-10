@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/home"
+
+        android:title="Home" />
+  </group>
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/account"
+        android:title="My Profile" />
+    <item
+        android:id="@+id/orders"
+        android:title="Status" />
+    <item
+      android:title="Refer someone"
+      android:id="@+id/refer"/>
+
+  </group>
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/setting"
+
+        android:title="Account setting" />
+  </group>
+
+
+
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home_menu"
+        android:title="home"
+        android:icon="@drawable/home_unselected"
+        app:showAsAction="always"
+
+        />
+    <item android:id="@+id/profile_menu"
+        android:title="profile"
+        android:icon="@drawable/profile_unselected"
+        app:showAsAction="always"
+
+        />
+    <item android:id="@+id/status_menu"
+        android:title="status"
+        android:icon="@drawable/status_unselected"
+        app:showAsAction="always"
+
+        />
+    <item android:id="@+id/refer_menu"
+        android:title="refer someone"
+        android:icon="@drawable/refer_unselected"
+        app:showAsAction="always"
+
+        />
+    <item android:id="@+id/setting_menu"
+        android:title="profile"
+        android:icon="@drawable/acc_setting_unselected"
+        app:showAsAction="always"
+
+        />
+
+</menu>

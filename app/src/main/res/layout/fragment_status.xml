@@ -1,0 +1,142 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taeven.anew.fragment.status"
+    android:orientation="vertical">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Profile completed"
+                android:id="@+id/profile_completed"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#3d3c49" />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_completed_radio"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:clickable="false"
+                android:enabled="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Profile submitted for evaluation"
+                android:id="@+id/profile_submitted"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#3d3c49" />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_submitted_radio"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:clickable="false"
+                android:enabled="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Evaluation in progress"
+                android:id="@+id/evaluation_progress"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#3d3c49" />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/evaluation_progress_radio"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:clickable="false"
+                android:enabled="true" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Result"
+                android:id="@+id/textView12"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:background="@drawable/rectangular_text_style"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="coming soon..."
+                android:id="@+id/textView13"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

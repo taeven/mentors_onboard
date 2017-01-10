@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.taeven.anew.fragment.setting"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_gravity="center_horizontal|top"
+            android:background="#c52831">
+
+            <!--<ImageView-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:id="@+id/profile_pic_setting"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:src="@drawable/profile_unselected" />-->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:elevation="12dp"
+                android:id="@+id/view2"
+                app:cardCornerRadius="50dp"
+                android:layout_centerHorizontal="true"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/profile_pic_setting"
+                    android:src="@drawable/profile_unselected"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside">
+                </ImageView>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|bottom"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Change password"
+                android:id="@+id/pass_change"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:textIsSelectable="false"
+                android:textColor="#3d3c49"
+                android:clickable="true"
+                android:longClickable="false"
+                android:contextClickable="false"
+                android:background="@drawable/text_view_selector"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Change profile picture"
+                android:id="@+id/profile_change"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:textIsSelectable="false"
+                android:textColor="#3d3c49"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/text_view_selector" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="logout"
+                android:id="@+id/logout"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:textIsSelectable="false"
+                android:textColor="#3d3c49"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/text_view_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

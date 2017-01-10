@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.taeven.anew.register"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_picker_reg"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:theme="@style/calender" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/submit_reg"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/unnamed" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:id="@+id/reset_reg"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/reset" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:fillViewport="false"
+        android:id="@+id/scroll_reg">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#773131"
+                android:paddingTop="8dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/name_reg"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="your name"
+                android:textAlignment="center"
+                android:textColorHint="#a9b9b3"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edittext_style" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Email-Id"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#773131"
+                android:layout_marginTop="0dp"
+                android:paddingTop="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/email_reg"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textAlignment="center"
+                android:textColorHint="#a9b9b3"
+                android:hint="your email"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edittext_style" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mobile No."
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#773131"
+                android:layout_marginTop="0dp"
+                android:paddingTop="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/mobile_reg"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textAlignment="center"
+                android:textColorHint="#a9b9b3"
+                android:hint="your mobile no."
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edittext_style" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#773131"
+                android:layout_marginTop="0dp"
+                android:paddingTop="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/passwd_reg"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textAlignment="center"
+                android:textColorHint="#a9b9b3"
+                android:hint="choose a password"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edittext_style" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Re-Enter Password"
+                android:id="@+id/textView6"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#773131"
+                android:layout_marginTop="0dp"
+                android:paddingTop="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/repass_reg"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textAlignment="center"
+                android:textColorHint="#a9b9b3"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edittext_style"
+                android:hint="enter again" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Sex"
+                android:id="@+id/textView7"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#773131"
+                android:paddingTop="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/sex_reg"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textAlignment="center"
+                android:textColorHint="#a9b9b3"
+                android:hint="male/female/other"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edittext_style" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Date Of Birth"
+                android:id="@+id/textView8"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#773131"
+                android:layout_marginTop="0dp"
+                android:paddingTop="8dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp">
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/date_reg"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textAlignment="center"
+                    android:textColorHint="#a9b9b3"
+                    android:hint="DD"
+                    android:background="@drawable/edittext_style"
+                    android:layout_weight="1"
+                    android:maxLength="2"
+                    android:numeric="integer"
+                    android:inputType="none"
+                    android:gravity="center_vertical|center|center_horizontal" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/month_reg"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:textColorHint="#a9b9b3"
+                    android:hint="MM"
+                    android:background="@drawable/edittext_style"
+                    android:layout_weight="1"
+                    android:maxLength="2"
+                    android:numeric="integer"
+                    android:gravity="center_vertical|center|center_horizontal" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/year_reg"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColorHint="#a9b9b3"
+                    android:hint="YYYY"
+                    android:editable="false"
+                    android:background="@drawable/edittext_style"
+                    android:layout_weight="1"
+                    android:maxLength="4"
+                    android:numeric="integer"
+                    android:gravity="center_vertical|center|center_horizontal" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Address"
+                android:id="@+id/textView9"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#773131"
+                android:layout_marginTop="0dp"
+                android:paddingTop="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/address_reg"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColorHint="#a9b9b3"
+                android:hint="your address"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edittext_style"
+                android:layout_marginBottom="50dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/done_cal_reg"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+
+</FrameLayout>
+
+
+
+
+
