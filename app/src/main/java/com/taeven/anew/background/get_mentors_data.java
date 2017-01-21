@@ -97,10 +97,6 @@ public class get_mentors_data  extends AsyncTask<Integer, Void,String> {
                 while (!obj.isNull(i))
                 {
                     JSONObject tmp = obj.getJSONObject(i);
-//                    String name = tmp.getString("name");
-//                    String image = tmp.getString("image");
-//                    byte[] b= Base64.decodeBase64(image.getBytes());
-//                    Bitmap img = BitmapFactory.decodeByteArray(b,0,b.length);
                     manage_temp_storage manager = new manage_temp_storage(context);
                     Log.i("manager get_mentor","gvdfgsfd");
                     testing temp = new testing();
