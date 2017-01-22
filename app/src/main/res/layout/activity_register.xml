@@ -189,18 +189,37 @@
                 android:textColor="#773131"
                 android:paddingTop="8dp" />
 
-            <EditText
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:id="@+id/sex_reg"
-                android:layout_gravity="center_horizontal"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:textAlignment="center"
-                android:textColorHint="#a9b9b3"
-                android:hint="male/female/other"
-                android:layout_marginTop="6dp"
-                android:background="@drawable/edittext_style" />
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_style">
+
+
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gender_register"
+                    android:layout_gravity="center_vertical"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/sex_reg"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:textColorHint="#a9b9b3"
+                    android:enabled="false"
+                    android:layout_marginLeft="2dp"
+                    android:background="#ffffff"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"

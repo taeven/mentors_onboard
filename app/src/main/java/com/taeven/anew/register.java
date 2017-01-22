@@ -5,10 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +24,7 @@ public class register extends AppCompatActivity {
     private TextView day,month,year;
     private View.OnClickListener fordate;
     private FloatingActionButton submit,reset;
+    private Spinner gender;
 //    private String[] string_month = {"JAN","FAB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"};
 //    private String[] string_sex = {"Male","Female","Other"};
     private profile_data person;
@@ -39,6 +43,17 @@ public class register extends AppCompatActivity {
 
     private  void onclick()
     {
+        gender.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                sex.setText(gender.getSelectedItem().toString());
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
         fordate = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -98,6 +113,11 @@ public class register extends AppCompatActivity {
     }
     private void set_views()
     {
+
+        gender=(Spinner)findViewById(R.id.gender_register);
+        String[] gender_list = new String[]{"Male", "Female"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,gender_list);
+        gender.setAdapter(adapter);
         name=(EditText)findViewById(R.id.name_reg);
         email=(EditText)findViewById(R.id.email_reg);
         mobile=(EditText)findViewById(R.id.mobile_reg);
