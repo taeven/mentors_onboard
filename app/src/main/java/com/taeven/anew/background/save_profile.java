@@ -82,17 +82,8 @@ public class save_profile extends AsyncTask<JSONObject,Void,String> {
     protected void onPostExecute(String s) {
         Log.d("sent",jsonObject.toString());
 
-        if(s.contentEquals("update success"))
-        {
-            Toast.makeText(context,"profile updated successfully",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,s,Toast.LENGTH_SHORT).show();
 
-
-        }
-        else
-        {
-            Log.d("result = ",s);
-            Toast.makeText(context,"profile is not changed",Toast.LENGTH_SHORT).show();
-        }
     }
     private boolean check_connection()
     {
