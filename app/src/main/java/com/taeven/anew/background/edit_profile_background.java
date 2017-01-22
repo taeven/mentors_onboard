@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import com.taeven.anew.R;
+import com.taeven.anew.after_login;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -188,6 +189,7 @@ public class edit_profile_background extends AsyncTask<JSONObject,Void,JSONObjec
                 save_profile save_it = new save_profile(context);
                 save_it.execute(new JSONObject[]{details});
 
+                after_login.profile_butt.performClick();
             }
         });
     }

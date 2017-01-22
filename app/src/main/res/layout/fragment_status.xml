@@ -30,6 +30,15 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
                 android:textColor="#3d3c49" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/percentage_status"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp" />
+
             <android.support.v4.widget.Space
                 android:layout_width="0dp"
                 android:layout_height="2dp"
@@ -133,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="coming soon..."
-                android:id="@+id/textView13"
+                android:id="@+id/result_status"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp" />
         </LinearLayout>
