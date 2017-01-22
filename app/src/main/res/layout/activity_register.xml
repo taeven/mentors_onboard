@@ -15,7 +15,7 @@
         android:layout_gravity="center"
         android:visibility="gone"
         android:background="#ffffff"
-        android:theme="@style/calender" />
+        android:theme="@style/green" />
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="50dp"
@@ -151,7 +151,9 @@
                 android:textColorHint="#a9b9b3"
                 android:hint="choose a password"
                 android:layout_marginTop="6dp"
-                android:background="@drawable/edittext_style" />
+                android:background="@drawable/edittext_style"
+                android:fontFamily="sans-serif"
+                android:typeface="normal" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -177,7 +179,9 @@
                 android:textColorHint="#a9b9b3"
                 android:layout_marginTop="6dp"
                 android:background="@drawable/edittext_style"
-                android:hint="enter again" />
+                android:hint="enter again"
+                android:fontFamily="sans-serif"
+                android:typeface="normal" />
 
             <TextView
                 android:layout_width="wrap_content"

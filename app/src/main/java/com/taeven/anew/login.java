@@ -1,11 +1,15 @@
 package com.taeven.anew;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
+import android.view.inputmethod.InputMethod;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,14 +23,19 @@ public class login extends AppCompatActivity {
     public TextView register;
     public Button login_button;
     public EditText username;
+    public ImageView show_hide;
     public String username_text;
     public String password_text;
     public EditText password;
+    private Boolean visibility=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         setTitle("login");
+
+        username = (EditText)findViewById(R.id.username_login);
+        password = (EditText)findViewById(R.id.password_login);
         create_new();
 //        check_conn();
         login();
@@ -34,6 +43,25 @@ public class login extends AppCompatActivity {
 
     public void login()
     {
+        show_hide=(ImageView)findViewById(R.id.show_pwd_login);
+        show_hide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(visibility)
+                {
+                    visibility=false;
+                    show_hide.setImageResource(R.drawable.visible);
+                    password.setTransformationMethod(new PasswordTransformationMethod());
+                }
+                else
+                {
+                    visibility=true;
+                    show_hide.setImageResource(R.drawable.blind);
+                    password.setTransformationMethod(null);
+                }
+            }
+        });
+
         login_button=(Button)findViewById(R.id.but_login);
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,8 +94,7 @@ public class login extends AppCompatActivity {
     public Boolean check_credentials()
     {
         JSONObject jsonObject = new JSONObject();
-        username = (EditText)findViewById(R.id.username_login);
-        password = (EditText)findViewById(R.id.password_login);
+
         username_text=username.getText().toString();
         password_text=password.getText().toString();
         if(username_text.isEmpty())

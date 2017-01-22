@@ -28,7 +28,9 @@
 
     <style name="calender" parent="Theme.AppCompat.Light.NoActionBar" />
 
-    <style name="green" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="green" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorAccent">@color/green</item>
+    </style>
 
 
 </resources>
